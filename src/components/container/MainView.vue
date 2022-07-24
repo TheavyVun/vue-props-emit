@@ -1,5 +1,6 @@
 <template>
     <div class="main">
+        <h2>All Friends</h2>
         <card-view @deleted="deleteFriend" v-for="friend of friends" :key="friend" :friend="friend" />
     </div>
 </template>
@@ -46,6 +47,7 @@ export default {
     .main {
         width: 60%;
         box-sizing: border-box;
+        text-align: center;
         padding: 20px 30px;
         height: 84vh;
         overflow: auto;
